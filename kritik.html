@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritik & Saran - Cuaca Dunia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kritik & Saran</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cuaca.html">Cuaca</a>
+      <a href="kritik.html" class="active">Kritik & Saran</a>
+    </nav>
+    <div id="dateTime"></div>
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌓</button>
+  </header>
+
+  <main class="feedback-section">
+    <h2>Beri Masukan</h2>
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Nama Anda" required>
+      <input type="email" id="email" placeholder="Email Anda" required>
+      <textarea id="message" placeholder="Tulis kritik atau saran Anda..." required></textarea>
+      <button type="submit" class="cta-btn">Kirim</button>
+    </form>
+    <p id="feedbackMsg"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Cuaca Dunia</p>
+  </footer>
+
+  <script src="kritik.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherly - Cuaca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Cuaca Dunia</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cuaca.html" class="active">Cuaca</a>
+      <a href="kritik.html">Kritik & Saran</a>
+    </nav>
+    <div id="dateTime"></div>
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌓</button>
+  </header>
+
+  <main>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Cari kota...">
+      <button onclick="searchCity()">Cari</button>
+    </div>
+
+    <div class="city-grid" id="cityContainer">
+      <!-- Kota populer akan muncul di sini -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Weatherly</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Cuaca 🌦️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Detail Cuaca</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cuaca.html">Cuaca</a>
+      <a href="kritik.html">Kritik & Saran</a>
+    </nav>
+    <div id="dateTime"></div>
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌓</button>
+  </header>
+
+  <main>
+    <button class="back-btn" onclick="window.location.href='cuaca.html'">Kembali</button>
+    <h2 id="cityTitle"></h2>
+    <div id="forecastContainer" class="forecast-grid"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Weatherly</p>
+  </footer>
+  <script src="detail.js"></script>
+</body>
+</html>

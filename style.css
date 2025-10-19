@@ -1,0 +1,318 @@
+/* ======= RESET & BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* ======= HEADER ======= */
+header {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.dark-mode-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark-mode-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* ======= MAIN ======= */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ======= HOME PAGE ======= */
+.home-content {
+  max-width: 700px;
+}
+
+.home-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.cta-btn {
+  background: white;
+  color: #007bff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* ======= SEARCH BOX ======= */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.search-box button {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.search-box button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* ======= WEATHER CARDS ======= */
+.city-grid, .forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  justify-items: center;
+}
+
+.city-card, .forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  width: 220px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.city-card:hover, .forecast-card:hover {
+  transform: scale(1.05);
+}
+
+.city-card img, .forecast-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.city-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.city-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.city-card button{
+  background-color: #4facfe;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-btn{
+    background-color: #00f2fe;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* ======= FEEDBACK ======= */
+.feedback-section {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.feedback-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  outline: none;
+  width: 500px;
+}
+
+.feedback-section textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.feedback-section button {
+  background: white;
+  color: #007bff;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.feedback-section button:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background: rgba(0,0,0,0.25);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* ======= DARK MODE ======= */
+.dark-mode {
+  background: linear-gradient(to bottom, #1f1f1f, #2e2e2e);
+  color: #eee;
+}
+
+.dark-mode nav a.active {
+  border-bottom: 2px solid #eee;
+}
+
+.dark-mode .city-card,
+.dark-mode .forecast-card {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .search-box input {
+  background: #333;
+  color: #eee;
+}
+
+.dark-mode .search-box button {
+  background: #eee;
+  color: #333;
+}
+
+.dark-mode .cta-btn {
+  background: #eee;
+  color: #222;
+}
+
+.dark-mode .cta-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.dark-mode footer {
+  background: rgba(0,0,0,0.4);
+}
